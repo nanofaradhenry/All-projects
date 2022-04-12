@@ -1,0 +1,1 @@
+CREATE TABLE groceries (name TEXT , quantity INTEGER);
