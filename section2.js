@@ -92,6 +92,6 @@ console.log(x, y) //console will show 10 10 ; because x and y both equal 10
 const theyear = (2022);
 const MikesAge = (theyear - 1997);
 const NigelsAge= (theyear - 2002);
-const average=(MikesAge + NigelsAge /2);
+const average=((MikesAge + NigelsAge) /2);// parenthesis inside ensure both variables run before division occurs
 
 console.log(MikesAge , NigelsAge , average); // should print two ages and an average
