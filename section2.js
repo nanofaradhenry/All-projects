@@ -95,3 +95,9 @@ const NigelsAge= (theyear - 2002);
 const average=((MikesAge + NigelsAge) /2);// parenthesis inside ensure both variables run before division occurs
 
 console.log(MikesAge , NigelsAge , average); // should print two ages and an average
+
+// multiplication practice
+let ab=(5);
+let bc=(3);
+let abc=(ab*bc)// multiplies ab and bc
+console.log(abc);
