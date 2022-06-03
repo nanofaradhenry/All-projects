@@ -101,3 +101,70 @@ let ab=(5);
 let bc=(3);
 let abc=(ab*bc)// multiplies ab and bc
 console.log(abc);
+
+// division practice 
+let at=(28);
+let tb=(7);
+let atb=(at/tb);
+console.log(atb);
+// exponent practice
+//let ** represent exponent symbol
+let trx=(9);
+let formula=(trx**2);
+console.log(formula);
+// more exponent practice
+let wrv=(3);
+let formula3=(wrv**3);//represents wrv to the exponent of 3
+console.log(formula3);// would log 27
+
+
+
+// bmi calculator 
+//task : store mark and johns mass and height in variables
+//calculate BMI USING formula : mass/ (height*height)
+//create a Boolean variable 'markhigherbmi'containing information about whether Mark has 
+//a higher BMI than John
+//TEST DATA 1
+//mark weight : 78kg 
+//mark height: 1.69m
+//john weight : 92kg
+//john height: 1.95m
+//TEST DATA 2
+//mark weight : 95kg
+//mark height:1.88m
+//john weight :85kg
+//john height : 1.76m
+
+//test 1
+let mrkwght= (78)
+let mrkhght= (1.69)
+let jhnwght= (92)
+let jhnhght= (1.95)
+
+let mrkbmi = (mrkwght/(mrkhght*mrkhght));
+let jhnbmi = (jhnwght/(jhnhght*jhnhght));
+
+markhigherbmi =(mrkbmi > jhnbmi);
+console.log(markhigherbmi);// should print true 
+
+//test 2
+let mrkwght2= (95)
+let mrkhght2 = (1.88)
+let jhnwght2 =(85)
+let jhnhght2= (1.76)
+
+let mrk2bmi= (mrkwght2 / (mrkhght2 * mrkhght2));
+let jhn2bmi= (jhnwght2 / (jhnhght2 * jhnhght2));
+
+markhigherbmi2=(mrk2bmi > jhn2bmi);
+console.log(markhigherbmi2)// should print false
+
+//boolean test
+let forty5=(45)
+let forty4=(44)
+whichgreater=(forty4 > forty5);
+console.log(whichgreater)//should print false
+
+
+
+
