@@ -166,5 +166,118 @@ whichgreater=(forty4 > forty5);
 console.log(whichgreater)//should print false
 
 
+//strings and template literals
+//sample code:
+const firsname='jonas';
+const job='teacher';
+const birthyear= 1991;
+const theyearnow= 2022;
+
+const joniss = "I'm"+' '+ firsname +',a' + '  '+ (theyearnow -birthyear ) + ' '+" year old "+' '+ job 
+console.log(joniss)
+
+//string template 
+// using `` and ${ } allows you to create a much simpler string
+// it also allows you to create a string without the need for spaces
+
+const newjonas = `I'm ${firsname} a ${theyearnow - birthyear} year old ${job}`
+console.log(newjonas)
+
+//multiline string with template 
+// with `` you can simplify code and right cleaner and quicker
+console.log(`hello
+my
+name is
+Henry Adams`)
+
+//Taking decisions if/else statements
+const age=16;
+ // if 18 or older true , if younger false
+if(age>=18){
+console.log("Can start driving with a Valid license")
+} else{
+    const yearsleft = 18-age
+    console.log(`You have to wait ${yearsleft} more years `)
+}
+
+//if  & else controlled structure
+//   if(){
+
+//  }else{
+
+//    }
+
+// you must have an else block in order for the script to run
+
+
+
+
+// coding challenge #2
+// using the bmi information from previous lesson, I will incorporate 
+// if and else statements to determine the higher BMI
+//final statement  template Marks bmi (### ) is higher than John's ! 
+// output to console
+
+
+// bmi calculator template
+//task : store mark and johns mass and height in variables
+//calculate BMI USING formula : mass/ (height*height)
+//create a Boolean variable 'markhigherbmi'containing information about whether Mark has 
+//a higher BMI than John
+//TEST DATA 1
+//mark weight : 78kg 
+//mark height: 1.69m
+//john weight : 92kg
+//john height: 1.95m
+//TEST DATA 2
+//mark weight : 95kg
+//mark height:1.88m
+//john weight :85kg
+//john height : 1.76m
+
+
+//test data 1 coding challenge #2
+
+let markswght = (78)
+let markshght = (1.69)
+let johnwght = (92)
+let johnhght = (1.95)
+
+let mrksbmi = (78/(1.69*1.69));
+let jhnsbmi = (92/(1.95*1.95));
+
+console.log(mrksbmi)
+console.log(jhnsbmi)
+
+if(mrksbmi>jhnsbmi){
+    console.log( `Marks  BMI  ${mrksbmi} is higher  than Johns ${jhnsbmi} !`)
+
+}else{
+
+    console.log( `Johns BMI ${jhnsbmi}  is higher than Marks ${mrksbmi}  !`)
+
+}
+
+// type conversion 
+// you can convert a string into a number within a string
+
+//let inputyear=1991
+//console.log(inputyear + 18) // will print 199118 which is what we DONT want
+// therefore convert to number
+let inputyear=1991
+console.log(Number(inputyear) + Number(18))// this will give us 2009
+
+console.log(Number('Jonas'))// will print NaN stating not a number
+
+//strings are white and numbers are purple
+
+console.log(String(23) , 45)// should print 23 as a white value or black and 45 purple 
+
+//type coercion
+console.log('I am'+ 23 +'years old')//operation between strings will cause numbers to be converted since plus signs are inserted
+
+console.log(23 *2)
+
+// the singular plus sign combines two values together
 
 
